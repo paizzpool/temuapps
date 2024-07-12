@@ -1,0 +1,255 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class NandosRestaurant extends JFrame {
+
+    private JButton showDataButton, addNewCustomerButton, nextQueueButton, recordButton;
+    private List<String> customers = new ArrayList<>();
+    private List<String> counter1Queue = new ArrayList<>();
+    private List<String> counter2Queue = new ArrayList<>();
+    private List<String> counter3Queue = new ArrayList<>();
+    private List<String> counter1PaymentRecords = new ArrayList<>();
+    private List<String> counter2PaymentRecords = new ArrayList<>();
+    private List<String> counter3PaymentRecords = new ArrayList<>();
+
+    private JTextArea counter1QueueArea, counter2QueueArea, counter3QueueArea;
+    private JLabel customerCountLabel;
+
+    private static final int MAX_LIMIT = 100;
+
+    public NandosRestaurant() {
+        setTitle("Nandos Restaurant - Ticket and Counter System");
+        setSize(800, 600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+
+        JPanel topPanel = new JPanel();
+        topPanel.setLayout(new FlowLayout());
+
+        showDataButton = new JButton("Show Data");
+        addNewCustomerButton = new JButton("Add New Customer");
+        nextQueueButton = new JButton("Next Queue");
+        recordButton = new JButton("Record");
+
+        customerCountLabel = new JLabel("Customer Count: 0");
+        topPanel.add(customerCountLabel);
+
+        topPanel.add(showDataButton);
+        topPanel.add(addNewCustomerButton);
+        topPanel.add(nextQueueButton);
+        topPanel.add(recordButton);
+
+        add(topPanel, BorderLayout.NORTH);
+
+        JPanel countersPanel = new JPanel();
+        countersPanel.setLayout(new GridLayout(1, 3));
+
+        counter1QueueArea = createQueueArea();
+        counter2QueueArea = createQueueArea();
+        counter3QueueArea = createQueueArea();
+
+        countersPanel.add(createCounterPanel("Counter 1", counter1Queue, counter1QueueArea, counter1PaymentRecords));
+        countersPanel.add(createCounterPanel("Counter 2", counter2Queue, counter2QueueArea, counter2PaymentRecords));
+        countersPanel.add(createCounterPanel("Counter 3", counter3Queue, counter3QueueArea, counter3PaymentRecords));
+
+        add(countersPanel, BorderLayout.CENTER);
+
+        showDataButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                showData();
+            }
+        });
+
+        addNewCustomerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addNewCustomers();
+            }
+        });
+
+        nextQueueButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addToNextQueue();
+            }
+        });
+
+        recordButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                showPaymentRecords();
+            }
+        });
+    }
+
+    private JPanel createCounterPanel(String counterName, List<String> queue, JTextArea queueArea, List<String> paymentRecords) {
+        JPanel counterPanel = new JPanel();
+        counterPanel.setLayout(new BorderLayout());
+
+        JLabel counterLabel = new JLabel(counterName, SwingConstants.CENTER);
+        counterPanel.add(counterLabel, BorderLayout.NORTH);
+
+        queueArea.setEditable(false);
+        counterPanel.add(new JScrollPane(queueArea), BorderLayout.CENTER);
+
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new FlowLayout());
+
+        JButton payButton = new JButton("Pay");
+        JButton receiptButton = new JButton("Receipt");
+
+        payButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (!queue.isEmpty()) {
+                    String customer = queue.remove(0);
+                    paymentRecords.add(customer + " has paid at " + counterName);
+                    JOptionPane.showMessageDialog(null, customer + " has paid at " + counterName);
+                    updateQueueDisplay();
+                } else {
+                    JOptionPane.showMessageDialog(null, "No customers in queue.");
+                }
+            }
+        });
+
+        receiptButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                showReceipt(counterName, paymentRecords);
+            }
+        });
+
+        buttonPanel.add(payButton);
+        buttonPanel.add(receiptButton);
+
+        counterPanel.add(buttonPanel, BorderLayout.SOUTH);
+
+        return counterPanel;
+    }
+
+    private JTextArea createQueueArea() {
+        return new JTextArea();
+    }
+
+    private void showData() {
+        try (BufferedReader reader = new BufferedReader(new FileReader("CustomerList.txt"))) {
+            StringBuilder customerData = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                customerData.append(line).append("\n");
+            }
+            JTextArea textArea = new JTextArea(customerData.toString());
+            textArea.setEditable(false);
+            JScrollPane scrollPane = new JScrollPane(textArea);
+            scrollPane.setPreferredSize(new Dimension(400, 300));
+            JOptionPane.showMessageDialog(null, scrollPane, "Customer Data", JOptionPane.INFORMATION_MESSAGE);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void addNewCustomers() {
+        try (BufferedReader reader = new BufferedReader(new FileReader("CustomerList.txt"))) {
+            String line;
+            customers.clear();
+            while ((line = reader.readLine()) != null && customers.size() < MAX_LIMIT) {
+                customers.add(line);
+            }
+            updateCustomerCountLabel();
+            JOptionPane.showMessageDialog(null, customers.size() + " New customers added successfully");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void addToNextQueue() {
+        int customerIndex = 0;
+        while (customerIndex < customers.size()) {
+            if (counter1Queue.size() < 5) {
+                counter1Queue.add(customers.remove(customerIndex));
+            } else if (counter2Queue.size() < 5) {
+                counter2Queue.add(customers.remove(customerIndex));
+            } else if (counter3Queue.size() < 5) {
+                counter3Queue.add(customers.remove(customerIndex));
+            } else {
+                break; // No more space in queues
+            }
+        }
+        updateCustomerCountLabel();
+        updateQueueDisplay();
+    }
+
+    private void updateQueueDisplay() {
+        updateCounterDisplay(counter1QueueArea, counter1Queue);
+        updateCounterDisplay(counter2QueueArea, counter2Queue);
+        updateCounterDisplay(counter3QueueArea, counter3Queue, 5); // Limit to 5 customers
+    }
+
+    private void updateCounterDisplay(JTextArea queueArea, List<String> queue) {
+        StringBuilder queueContent = new StringBuilder();
+        for (String customer : queue) {
+            queueContent.append(customer).append("\n");
+        }
+        queueArea.setText(queueContent.toString());
+    }
+
+    private void updateCounterDisplay(JTextArea queueArea, List<String> queue, int limit) {
+        StringBuilder queueContent = new StringBuilder();
+        int count = 0;
+        for (String customer : queue) {
+            if (count++ < limit) {
+                queueContent.append(customer).append("\n");
+            }
+        }
+        queueArea.setText(queueContent.toString());
+    }
+
+    private void showPaymentRecords() {
+        StringBuilder recordData = new StringBuilder("Payment Records:\n");
+        for (String record : counter1PaymentRecords) {
+            recordData.append(record).append("\n");
+        }
+        for (String record : counter2PaymentRecords) {
+            recordData.append(record).append("\n");
+        }
+        for (String record : counter3PaymentRecords) {
+            recordData.append(record).append("\n");
+        }
+        JTextArea textArea = new JTextArea(recordData.toString());
+        textArea.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        scrollPane.setPreferredSize(new Dimension(400, 300));
+        JOptionPane.showMessageDialog(null, scrollPane, "Payment Records", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private void showReceipt(String counterName, List<String> paymentRecords) {
+        StringBuilder receipt = new StringBuilder(counterName + " Receipts:\n");
+        for (String record : paymentRecords) {
+            receipt.append(record).append("\n");
+        }
+        JTextArea textArea = new JTextArea(receipt.toString());
+        textArea.setEditable(false);
+        JScrollPane scrollPane = new JScrollPane(textArea);
+        scrollPane.setPreferredSize(new Dimension(400, 300));
+        JOptionPane.showMessageDialog(null, scrollPane, "Receipt", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private void updateCustomerCountLabel() {
+        customerCountLabel.setText("Customer Count: " + customers.size());
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new NandosRestaurant().setVisible(true);
+            }
+        });
+    }
+}
