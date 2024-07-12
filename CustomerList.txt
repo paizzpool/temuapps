@@ -1,0 +1,200 @@
+1,John Doe,1,101,Burger,5.99,2,2023-10-01T12:00:00
+1,John Doe,1,102,Coke,1.99,1,2023-10-01T12:00:10
+2,Jane Smith,2,103,Pizza,8.99,1,2023-10-01T12:15:00
+2,Jane Smith,2,104,Salad,4.99,1,2023-10-01T12:15:10
+3,Bob Johnson,3,105,Pasta,7.99,3,2023-10-01T12:30:00
+3,Bob Johnson,3,106,Water,0.99,1,2023-10-01T12:30:10
+4,Susan Lee,4,107,Sandwich,6.99,2,2023-10-01T12:45:00
+4,Susan Lee,4,108,Juice,2.99,1,2023-10-01T12:45:10
+5,Michael Brown,5,109,Chicken Wings,9.99,1,2023-10-01T13:00:00
+5,Michael Brown,5,110,Beer,3.99,1,2023-10-01T13:00:10
+6,Emily Davis,6,111,Steak,15.99,1,2023-10-01T13:15:00
+6,Emily Davis,6,112,Wine,5.99,1,2023-10-01T13:15:10
+7,David Wilson,7,113,Fish and Chips,12.99,2,2023-10-01T13:30:00
+7,David Wilson,7,114,Sprite,2.49,1,2023-10-01T13:30:10
+8,Mary Anderson,8,115,Tacos,4.99,3,2023-10-01T13:45:00
+8,Mary Anderson,8,116,Tea,1.49,1,2023-10-01T13:45:10
+9,James Thomas,9,117,Fried Rice,8.99,1,2023-10-01T14:00:00
+9,James Thomas,9,118,Milkshake,3.49,1,2023-10-01T14:00:10
+10,Linda Martin,10,119,Burrito,6.99,2,2023-10-01T14:15:00
+10,Linda Martin,10,120,Coffee,1.99,1,2023-10-01T14:15:10
+11,Daniel Jackson,11,121,Ramen,9.99,1,2023-10-01T14:30:00
+11,Daniel Jackson,11,122,Green Tea,1.49,1,2023-10-01T14:30:10
+12,Jennifer Thompson,12,123,Ice Cream,2.99,2,2023-10-01T14:45:00
+12,Jennifer Thompson,12,124,Lemonade,2.99,1,2023-10-01T14:45:10
+13,Paul White,13,125,Hot Dog,5.99,2,2023-10-01T15:00:00
+13,Paul White,13,126,Pepsi,1.99,1,2023-10-01T15:00:10
+14,Barbara Harris,14,127,Salmon,14.99,1,2023-10-01T15:15:00
+14,Barbara Harris,14,128,Champagne,10.99,1,2023-10-01T15:15:10
+15,Richard Clark,15,129,Sushi,11.99,3,2023-10-01T15:30:00
+15,Richard Clark,15,130,Sake,3.49,1,2023-10-01T15:30:10
+16,Patricia Lewis,16,131,Salad,6.99,1,2023-10-01T15:45:00
+16,Patricia Lewis,16,132,Water,0.99,1,2023-10-01T15:45:10
+17,Charles Walker,17,133,Bagel,4.99,2,2023-10-01T16:00:00
+17,Charles Walker,17,134,Coffee,1.99,1,2023-10-01T16:00:10
+18,Jessica Robinson,18,135,Donut,2.99,3,2023-10-01T16:15:00
+18,Jessica Robinson,18,136,Hot Chocolate,2.49,1,2023-10-01T16:15:10
+19,Laura Young,19,137,Omelette,5.99,2,2023-10-01T16:30:00
+19,Laura Young,19,138,Orange Juice,1.99,1,2023-10-01T16:30:10
+20,Steven King,20,139,Nachos,7.99,1,2023-10-01T16:45:00
+20,Steven King,20,140,Margarita,4.99,1,2023-10-01T16:45:10
+21,Dorothy Allen,21,141,Wrap,6.99,2,2023-10-01T17:00:00
+21,Dorothy Allen,21,142,Lemonade,2.49,1,2023-10-01T17:00:10
+22,Mark Wright,22,143,Taco Salad,8.99,1,2023-10-01T17:15:00
+22,Mark Wright,22,144,Sprite,1.99,1,2023-10-01T17:15:10
+23,Karen Scott,23,145,Chicken Sandwich,6.99,1,2023-10-01T17:30:00
+23,Karen Scott,23,146,Water,0.99,1,2023-10-01T17:30:10
+24,Joseph Green,24,147,Pasta,7.99,2,2023-10-01T17:45:00
+24,Joseph Green,24,148,Red Wine,5.99,1,2023-10-01T17:45:10
+25,Nancy Baker,25,149,Cheesecake,4.99,3,2023-10-01T18:00:00
+25,Nancy Baker,25,150,Tea,1.49,1,2023-10-01T18:00:10
+26,Diana Mitchell,26,151,Beef Stroganoff,12.99,1,2023-10-01T18:15:00
+26,Diana Mitchell,26,152,White Wine,6.49,1,2023-10-01T18:15:10
+27,Christopher Lee,27,153,Pad Thai,9.99,1,2023-10-01T18:30:00
+27,Christopher Lee,27,154,Thai Iced Tea,2.99,1,2023-10-01T18:30:10
+28,Michelle Roberts,28,155,Grilled Cheese,5.99,2,2023-10-01T18:45:00
+28,Michelle Roberts,28,156,Iced Coffee,3.49,1,2023-10-01T18:45:10
+29,Matthew Nelson,29,157,Hamburger,8.99,1,2023-10-01T19:00:00
+29,Matthew Nelson,29,158,Root Beer,2.49,1,2023-10-01T19:00:10
+30,Betty Perez,30,159,Sliders,7.99,2,2023-10-01T19:15:00
+30,Betty Perez,30,160,Water,0.99,1,2023-10-01T19:15:10
+31,James Carter,31,161,Clam Chowder,6.99,1,2023-10-01T19:30:00
+31,James Carter,31,162,Apple Cider,2.99,1,2023-10-01T19:30:10
+32,Betty Ward,32,163,Gyro,5.99,2,2023-10-01T19:45:00
+32,Betty Ward,32,164,Coke,1.99,1,2023-10-01T19:45:10
+33,John Sanders,33,165,Turkey Sandwich,6.99,1,2023-10-01T20:00:00
+33,John Sanders,33,166,Iced Tea,1.99,1,2023-10-01T20:00:10
+34,Laura Rodriguez,34,167,Burrito Bowl,8.99,2,2023-10-01T20:15:00
+34,Laura Rodriguez,34,168,Lemonade,2.49,1,2023-10-01T20:15:10
+35,Michael Hill,35,169,Chicken Curry,9.99,1,2023-10-01T20:30:00
+35,Michael Hill,35,170,Mango Lassi,3.99,1,2023-10-01T20:30:10
+36,Shirley Campbell,36,171,Souvlaki,7.99,1,2023-10-01T20:45:00
+36,Shirley Campbell,36,172,Beer,3.99,1,2023-10-01T20:45:10
+37,David Stewart,37,173,Falafel,5.99,1,2023-10-01T21:00:00
+37,David Stewart,37,174,Lemonade,1.99,1,2023-10-01T21:00:10
+38,Steven Young,38,175,Caesar Salad,6.99,2,2023-10-01T21:15:00
+38,Steven Young,38,176,Sparkling Water,2.49,1,2023-10-01T21:15:10
+39,Dorothy Sanchez,39,177,BBQ Chicken,10.99,1,2023-10-01T21:30:00
+39,Dorothy Sanchez,39,178,Cola,1.99,1,2023-10-01T21:30:10
+40,Ethan Russell,40,179,Spaghetti,8.99,2,2023-10-01T21:45:00
+40,Ethan Russell,40,180,Orange Juice,1.99,1,2023-10-01T21:45:10
+41,Diana Phillips,41,181,Lasagna,9.99,1,2023-10-01T22:00:00
+41,Diana Phillips,41,182,Apple Juice,1.99,1,2023-10-01T22:00:10
+42,James Evans,42,183,Garden Salad,5.99,1,2023-10-01T22:15:00
+42,James Evans,42,184,Lemonade,2.49,1,2023-10-01T22:15:10
+43,Laura Edwards,43,185,Steak,15.99,1,2023-10-01T22:30:00
+43,Laura Edwards,43,186,Red Wine,6.99,1,2023-10-01T22:30:10
+44,Thomas Collins,44,187,Fish Tacos,7.99,2,2023-10-01T22:45:00
+44,Thomas Collins,44,188,Beer,3.49,1,2023-10-01T22:45:10
+45,Barbara Cruz,45,189,French Toast,5.99,1,2023-10-01T23:00:00
+45,Barbara Cruz,45,190,Coffee,2.99,1,2023-10-01T23:00:10
+46,Paul Foster,46,191,BLT Sandwich,6.99,1,2023-10-01T23:15:00
+46,Paul Foster,46,192,Water,0.99,1,2023-10-01T23:15:10
+47,Nancy Henderson,47,193,Quesadilla,6.99,2,2023-10-01T23:30:00
+47,Nancy Henderson,47,194,Horchata,2.99,1,2023-10-01T23:30:10
+48,Kevin Moore,48,195,Chicken Pesto,8.99,1,2023-10-01T23:45:00
+48,Kevin Moore,48,196,Iced Tea,1.99,1,2023-10-01T23:45:10
+49,Donna Peterson,49,197,French Fries,2.99,2,2023-10-02T00:00:00
+49,Donna Peterson,49,198,Soda,1.99,1,2023-10-02T00:00:10
+50,Betty Howard,50,199,Baked Potato,4.99,1,2023-10-02T00:15:00
+50,Betty Howard,50,200,Root Beer,2.49,1,2023-10-02T00:15:10
+51,David Myers,51,201,Chicken Alfredo,9.99,1,2023-10-02T00:30:00
+51,David Myers,51,202,White Wine,6.49,1,2023-10-02T00:30:10
+52,Jessica Cooper,52,203,Beef Burger,8.99,1,2023-10-02T00:45:00
+52,Jessica Cooper,52,204,Coke,1.99,1,2023-10-02T00:45:10
+53,James Cook,53,205,BBQ Ribs,12.99,1,2023-10-02T01:00:00
+53,James Cook,53,206,Cola,1.99,1,2023-10-02T01:00:10
+54,Amy Rivera,54,207,Cobb Salad,7.99,1,2023-10-02T01:15:00
+54,Amy Rivera,54,208,Lemonade,2.49,1,2023-10-02T01:15:10
+55,Dorothy Bell,55,209,Philly Cheesesteak,8.99,1,2023-10-02T01:30:00
+55,Dorothy Bell,55,210,Pepper Spray,2.79,1,2023-10-02T01:30:10
+56,Henry Watson,56,211,Seafood Linguini,11.99,1,2023-10-02T01:45:00
+56,Henry Watson,56,212,Water,0.99,1,2023-10-02T01:45:10
+57,Rebecca Brooks,57,213,Chicken Soup,6.99,1,2023-10-02T02:00:00
+57,Rebecca Brooks,57,214,Earl Grey,2.49,1,2023-10-02T02:00:10
+58,Margaret Rogers,58,215,Pancakes,5.99,2,2023-10-02T02:15:00
+58,Margaret Rogers,58,216,Maple Syrup,0.99,1,2023-10-02T02:15:10
+59,Lisa Perry,59,217,Bison Burger,13.99,1,2023-10-02T02:30:00
+59,Lisa Perry,59,218,Water,0.99,1,2023-10-02T02:30:10
+60,Barbara Clark,60,219,Caesar Salad,6.99,1,2023-10-02T02:45:00
+60,Barbara Clark,60,220,Green Tea,1.49,1,2023-10-02T02:45:10
+61,Charles Turner,61,221,Chicken Wrap,7.99,1,2023-10-02T03:00:00
+61,Charles Turner,61,222,Water,0.99,1,2023-10-02T03:00:10
+62,Paul Perez,62,223,Turkey Club,8.99,1,2023-10-02T03:15:00
+62,Paul Perez,62,224,Iced Tea,1.99,1,2023-10-02T03:15:10
+63,Dorothy Collins,63,225,Greek Salad,6.99,1,2023-10-02T03:30:00
+63,Dorothy Collins,63,226,Coke,1.99,1,2023-10-02T03:30:10
+64,Nancy Hayes,64,227,Chicken Tenders,7.99,1,2023-10-02T03:45:00
+64,Nancy Hayes,64,228,Lemonade,2.49,1,2023-10-02T03:45:10
+65,Thomas Martin,65,229,Fish and Chips,10.99,1,2023-10-02T04:00:00
+65,Thomas Martin,65,230,Beer,3.49,1,2023-10-02T04:00:10
+66,Karen Price,66,231,Chili,7.99,1,2023-10-02T04:15:00
+66,Karen Price,66,232,Hot Chocolate,2.49,1,2023-10-02T04:15:10
+67,Patricia Adams,67,233,Chicken Salad,6.99,1,2023-10-02T04:30:00
+67,Patricia Adams,67,234,Water,0.99,1,2023-10-02T04:30:10
+68,Joshua Bennett,68,235,Mussels,12.99,1,2023-10-02T04:45:00
+68,Joshua Bennett,68,236,White Wine,6.49,1,2023-10-02T04:45:10
+69,Christopher Lee,69,237,Pepperoni Pizza,8.99,1,2023-10-02T05:00:00
+69,Christopher Lee,69,238,Beer,3.49,1,2023-10-02T05:00:10
+70,Deborah King,70,239,Falafel Wrap,7.99,1,2023-10-02T05:15:00
+70,Deborah King,70,240,Orange Juice,1.99,1,2023-10-02T05:15:10
+71,Donald Wright,71,241,Shrimp Scampi,13.99,1,2023-10-02T05:30:00
+71,Donald Wright,71,242,Red Wine,6.99,1,2023-10-02T05:30:10
+72,Carol Smith,72,243,Baked Ziti,8.99,1,2023-10-02T05:45:00
+72,Carol Smith,72,244,Coke,1.99,1,2023-10-02T05:45:10
+73,Eric Johnson,73,245,Banh Mi,5.99,2,2023-10-02T06:00:00
+73,Eric Johnson,73,246,Water,0.99,1,2023-10-02T06:00:10
+74,Karen Wright,74,247,Brisket,9.99,1,2023-10-02T06:15:00
+74,Karen Wright,74,248,Budweiser,4.99,1,2023-10-02T06:15:10
+75,Betty Clark,75,249,Spicy Noodles,6.99,1,2023-10-02T06:30:00
+75,Betty Clark,75,250,Green Tea,1.49,1,2023-10-02T06:30:10
+76,Matthew Lewis,76,251,Stir Fry,8.99,1,2023-10-02T06:45:00
+76,Matthew Lewis,76,252,Coke,1.99,1,2023-10-02T06:45:10
+77,Sarah Hernandez,77,253,Curry,9.99,1,2023-10-02T07:00:00
+77,Sarah Hernandez,77,254,Mango Lassi,3.99,1,2023-10-02T07:00:10
+78,George Martin,78,255,Fried Chicken,7.99,2,2023-10-02T07:15:00
+78,George Martin,78,256,Root Beer,2.49,1,2023-10-02T07:15:10
+79,Amy Martinez,79,257,Tofu Salad,5.99,1,2023-10-02T07:30:00
+79,Amy Martinez,79,258,Water,0.99,1,2023-10-02T07:30:10
+80,Melissa Robinson,80,259,Lamb Chops,14.99,1,2023-10-02T07:45:00
+80,Melissa Robinson,80,260,Rose Wine,7.49,1,2023-10-02T07:45:10
+81,Brian Walker,81,261,Fettucine Alfredo,8.99,1,2023-10-02T08:00:00
+81,Brian Walker,81,262,Cola,1.99,1,2023-10-02T08:00:10
+82,Margaret Edwards,82,263,Vegetable Stew,7.99,1,2023-10-02T08:15:00
+82,Margaret Edwards,82,264,Tea,1.49,1,2023-10-02T08:15:10
+83,Dennis Wood,83,265,Peanut Noodles,9.99,1,2023-10-02T08:30:00
+83,Dennis Wood,83,266,Iced Coffee,2.99,1,2023-10-02T08:30:10
+84,Steven James,84,267,French Dip,8.99,1,2023-10-02T08:45:00
+84,Steven James,84,268,Pepsi,1.99,1,2023-10-02T08:45:10
+85,Dorothy Wilson,85,269,Grilled Fish,11.99,1,2023-10-02T09:00:00
+85,Dorothy Wilson,85,270,Lemonade,2.49,1,2023-10-02T09:00:10
+86,Charles Brown,86,271,Barbacoa Tacos,5.99,2,2023-10-02T09:15:00
+86,Charles Brown,86,272,Coke,1.99,1,2023-10-02T09:15:10
+87,Linda Carter,87,273,Grapefruit,6.99,1,2023-10-02T09:30:00
+87,Linda Carter,87,274,Orange Juice,1.99,1,2023-10-02T09:30:10
+88,Melissa Clark,88,275,Pho,8.99,1,2023-10-02T09:45:00
+88,Melissa Clark,88,276,Thai Iced Coffee,2.99,1,2023-10-02T09:45:10
+89,Brian Thompson,89,277,Spicy Wings,9.99,2,2023-10-02T10:00:00
+89,Brian Thompson,89,278,Apple Cider,2.99,1,2023-10-02T10:00:10
+90,Amy Allen,90,279,Margherita Pizza,7.99,1,2023-10-02T10:15:00
+90,Amy Allen,90,280,Water,0.99,1,2023-10-02T10:15:10
+91,David Harris,91,281,Banh Xeo,10.99,1,2023-10-02T10:30:00
+91,David Harris,91,282,Beer,3.49,1,2023-10-02T10:30:10
+92,Lisa Wright,92,283,Lentil Soup,6.99,1,2023-10-02T10:45:00
+92,Lisa Wright,92,284,Lemonade,1.99,1,2023-10-02T10:45:10
+93,Daniel Walker,93,285,BBQ Pulled Pork Sandwich,8.99,1,2023-10-02T11:00:00
+93,Daniel Walker,93,286,Coke,1.99,1,2023-10-02T11:00:10
+94,Barbara King,94,287,Ribs,12.99,1,2023-10-02T11:15:00
+94,Barbara King,94,288,Beer,3.49,1,2023-10-02T11:15:10
+95,Joshua Scott,95,289,Enchiladas,7.99,1,2023-10-02T11:30:00
+95,Joshua Scott,95,290,Water,0.99,1,2023-10-02T11:30:10
+96,Dorothy Adams,96,291,Lamb Burger,14.99,1,2023-10-02T11:45:00
+96,Dorothy Adams,96,292,Iced Coffee,2.99,1,2023-10-02T11:45:10
+97,Joshua Nelson,97,293,Sashimi,12.99,1,2023-10-02T12:00:00
+97,Joshua Nelson,97,294,Green Tea,1.49,1,2023-10-02T12:00:10
+98,Amanda Harris,98,295,Ramen,9.99,1,2023-10-02T12:15:00
+98,Amanda Harris,98,296,Jasmine Tea,1.99,1,2023-10-02T12:15:10
+99,James Young,99,297,Chicken and Waffles,8.99,1,2023-10-02T12:30:00
+99,James Young,99,298,Orange Soda,2.49,1,2023-10-02T12:30:10
+100,Nancy Allen,100,299,Fruit Salad,5.99,1,2023-10-02T12:45:00
+100,Nancy Allen,100,300,Mint Tea,1.49,1,2023-10-02T12:45:10
