@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class CustomerInformation {
+    private int custId;
+    private String custName;
+    private int tableNumber;
+    private List<OrderInformation> orderList;
+
+    public CustomerInformation(int custId, String custName, int tableNumber) {
+        this.custId = custId;
+        this.custName = custName;
+        this.tableNumber = tableNumber;
+        this.orderList = new ArrayList<>();
+    }
+
+    public void addOrder(OrderInformation order) {
+        orderList.add(order);
+    }
+
+    // Getters and Setters
+    public int getCustId() {
+        return custId;
+    }
+
+    public void setCustId(int custId) {
+        this.custId = custId;
+    }
+
+    public String getCustName() {
+        return custName;
+    }
+
+    public void setCustName(String custName) {
+        this.custName = custName;
+    }
+
+    public int getTableNumber() {
+        return tableNumber;
+    }
+
+    public void setTableNumber(int tableNumber) {
+        this.tableNumber = tableNumber;
+    }
+
+    public List<OrderInformation> getOrderList() {
+        return orderList;
+    }
+
+    public void setOrderList(List<OrderInformation> orderList) {
+        this.orderList = orderList;
+    }
+
+    @Override
+    public String toString() {
+        return "CustomerInformation{" +
+                "custId=" + custId +
+                ", custName='" + custName + '\'' +
+                ", tableNumber=" + tableNumber +
+                ", orderList=" + orderList +
+                '}';
+    }
+}
