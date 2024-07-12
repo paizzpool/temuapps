@@ -1,0 +1,46 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class WelcomePage extends JFrame {
+
+    public WelcomePage() {
+        setTitle("Nando's Restaurant");
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new BorderLayout());
+
+        JLabel welcomeLabel = new JLabel("Nando's Restaurant", SwingConstants.CENTER);
+        welcomeLabel.setFont(new Font("Serif", Font.BOLD, 20));
+        add(welcomeLabel, BorderLayout.CENTER);
+
+        JButton proceedButton = new JButton("Enter");
+        proceedButton.setFont(new Font("Serif", Font.PLAIN, 18));
+        proceedButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Enter();
+            }
+        });
+
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new FlowLayout());
+        buttonPanel.add(proceedButton);
+        add(buttonPanel, BorderLayout.SOUTH);
+    }
+
+    private void Enter() {
+        new NandosRestaurant().setVisible(true);
+        this.dispose();
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new WelcomePage().setVisible(true);
+            }
+        });
+    }
+}
